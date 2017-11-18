@@ -1,0 +1,12 @@
+PODS:
+  - CYExtensions (0.0.14)
+
+DEPENDENCIES:
+  - CYExtensions
+
+SPEC CHECKSUMS:
+  CYExtensions: d8cd3e214bab011407bbce72fe38c388ff1cb87e
+
+PODFILE CHECKSUM: 8aa6183ab16aa2bdd6341a03699338be0ff5e51e
+
+COCOAPODS: 1.3.1
