@@ -10,26 +10,17 @@ import UIKit
 
 class TestExtensionsViewController: UIViewController {
 
+    @IBOutlet var masterView: TestExtensionsMasterView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.masterView.imageView.image = self.view.takeScreenshot().maskWithColor(color: UIColor(rgb: 0x0000FF))
+        self.hideKeyboardWhenTappedAround()
+        self.masterView.testLabel.attributedText = "<h1><u>Alma</u>fa</h1>".html2AttributedString
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print(self.getTopController())
     }
-    */
 
 }

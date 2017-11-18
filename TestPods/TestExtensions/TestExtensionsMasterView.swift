@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import CYExtensions
 
 class TestExtensionsMasterView: UIView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var testView: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        testView.backgroundColor = UIColor(rgb: 0xFF0000)
+        testView.addBorder(color: UIColor(red: 0, green: 255, blue: 0), width: 5.0)
+        testView.roundCorners(corners: [.bottomLeft, .topLeft], radius: 10.0)
+        testView.layer.masksToBounds = false
+        testView.addShadow(shadowColor: UIColor(rgb: 0x0000FF).cgColor, shadowOffset: CGSize(width: 10.0, height: 10.0), shadowOpacity: 0.8, shadowRadius: 3.0)
+        testView.addShadow()
     }
-    */
-
 }
