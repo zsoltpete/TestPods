@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## AlertManager
+
+DO NOT COPY!
+
 ## CYExtensions
 
 DO NOT COPY!

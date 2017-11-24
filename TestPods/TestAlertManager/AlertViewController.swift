@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlertManager
 
 class AlertViewController: UIViewController {
 
@@ -30,7 +31,7 @@ class AlertViewController: UIViewController {
 }
 
 extension AlertViewController: Alertable {
-    
+
     func style(alertController: UIAlertController) {
         alertController.view.tintColor = .red
     }

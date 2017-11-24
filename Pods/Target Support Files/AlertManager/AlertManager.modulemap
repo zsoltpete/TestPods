@@ -1,0 +1,6 @@
+framework module AlertManager {
+  umbrella header "AlertManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

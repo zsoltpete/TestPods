@@ -102,10 +102,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AlertManager/AlertManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CYExtensions/CYExtensions.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CYLocalization/CYLocalization.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/AlertManager/AlertManager.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CYExtensions/CYExtensions.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CYLocalization/CYLocalization.framework"
 fi

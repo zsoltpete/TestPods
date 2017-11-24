@@ -8,12 +8,12 @@
 
 import Foundation
 
-class AlertOption {
+public class AlertOption {
     
     var title: String
     var action: (() -> Void)?
     
-    init(title: String = "", action: (() -> Void)?) {
+    public init(title: String = "", action: (() -> Void)?) {
         self.title = title
         self.action = action
     }
