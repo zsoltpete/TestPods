@@ -14,6 +14,11 @@
 		504B9D1A1FBF830D00CAB017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504B9D191FBF830D00CAB017 /* Assets.xcassets */; };
 		504B9D1D1FBF830D00CAB017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504B9D1B1FBF830D00CAB017 /* LaunchScreen.storyboard */; };
 		504B9D281FBF830D00CAB017 /* TestPodsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504B9D271FBF830D00CAB017 /* TestPodsTests.swift */; };
+		50F38CDF1FC8B2BE00838CB4 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F38CDE1FC8B2BE00838CB4 /* AlertManager.swift */; };
+		50F38CE21FC8B3AC00838CB4 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F38CE11FC8B3AC00838CB4 /* AlertViewController.swift */; };
+		50F38CE41FC8B3D800838CB4 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F38CE31FC8B3D800838CB4 /* Alert.swift */; };
+		50F38CE61FC8BA9200838CB4 /* AlertOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F38CE51FC8BA9200838CB4 /* AlertOption.swift */; };
+		50F38CE91FC8BC9E00838CB4 /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F38CE81FC8BC9E00838CB4 /* Alertable.swift */; };
 		536756003BD197D2E35C57D3 /* Pods_TestPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A65A9BF772EDE571948444D /* Pods_TestPods.framework */; };
 		77FC2217EB554D0295D3A307 /* Pods_TestPodsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6945A9B2D97C27BB0F9D5A67 /* Pods_TestPodsTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +47,11 @@
 		504B9D231FBF830D00CAB017 /* TestPodsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPodsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		504B9D271FBF830D00CAB017 /* TestPodsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPodsTests.swift; sourceTree = "<group>"; };
 		504B9D291FBF830D00CAB017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50F38CDE1FC8B2BE00838CB4 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		50F38CE11FC8B3AC00838CB4 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		50F38CE31FC8B3D800838CB4 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		50F38CE51FC8BA9200838CB4 /* AlertOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOption.swift; sourceTree = "<group>"; };
+		50F38CE81FC8BC9E00838CB4 /* Alertable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
 		6945A9B2D97C27BB0F9D5A67 /* Pods_TestPodsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestPodsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70183CFFBB149F783FC76E7C /* Pods-TestPodsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPodsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPodsTests/Pods-TestPodsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A9808FFEDB33622B70C3510 /* Pods-TestPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPods.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPods/Pods-TestPods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +110,8 @@
 		504B9D111FBF830D00CAB017 /* TestPods */ = {
 			isa = PBXGroup;
 			children = (
+				50F38CE01FC8B37600838CB4 /* TestAlertManager */,
+				50F38CDD1FC8B28B00838CB4 /* AlertManager */,
 				5017991B1FC0BE20000A6D46 /* TestExtensions */,
 				504B9D121FBF830D00CAB017 /* AppDelegate.swift */,
 				504B9D161FBF830D00CAB017 /* Main.storyboard */,
@@ -117,6 +129,41 @@
 				504B9D291FBF830D00CAB017 /* Info.plist */,
 			);
 			path = TestPodsTests;
+			sourceTree = "<group>";
+		};
+		50F38CDD1FC8B28B00838CB4 /* AlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				50F38CEA1FC8CE0A00838CB4 /* Models */,
+				50F38CE71FC8BC8100838CB4 /* Protocols */,
+				50F38CDE1FC8B2BE00838CB4 /* AlertManager.swift */,
+			);
+			path = AlertManager;
+			sourceTree = "<group>";
+		};
+		50F38CE01FC8B37600838CB4 /* TestAlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				50F38CE11FC8B3AC00838CB4 /* AlertViewController.swift */,
+			);
+			path = TestAlertManager;
+			sourceTree = "<group>";
+		};
+		50F38CE71FC8BC8100838CB4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				50F38CE81FC8BC9E00838CB4 /* Alertable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		50F38CEA1FC8CE0A00838CB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50F38CE31FC8B3D800838CB4 /* Alert.swift */,
+				50F38CE51FC8BA9200838CB4 /* AlertOption.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5BCE564F6EE65D749F026C81 /* Pods */ = {
@@ -300,10 +347,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TestPods/Pods-TestPods-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CYExtensions/CYExtensions.framework",
+				"${BUILT_PRODUCTS_DIR}/CYLocalization/CYLocalization.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYExtensions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYLocalization.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -334,9 +383,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TestPods/Pods-TestPods-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -350,8 +402,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F38CE41FC8B3D800838CB4 /* Alert.swift in Sources */,
+				50F38CDF1FC8B2BE00838CB4 /* AlertManager.swift in Sources */,
 				5017991F1FC0BE6C000A6D46 /* TestExtensionsMasterView.swift in Sources */,
 				5017991D1FC0BE4E000A6D46 /* TestExtensionsViewController.swift in Sources */,
+				50F38CE21FC8B3AC00838CB4 /* AlertViewController.swift in Sources */,
+				50F38CE61FC8BA9200838CB4 /* AlertOption.swift in Sources */,
+				50F38CE91FC8BC9E00838CB4 /* Alertable.swift in Sources */,
 				504B9D131FBF830D00CAB017 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +566,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CSD326H7VF;
 				INFOPLIST_FILE = TestPods/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.codeyard.TestPods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -525,6 +583,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CSD326H7VF;
 				INFOPLIST_FILE = TestPods/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eu.codeyard.TestPods;
 				PRODUCT_NAME = "$(TARGET_NAME)";
