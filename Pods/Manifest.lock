@@ -1,12 +1,15 @@
 PODS:
-  - CYExtensions (0.0.14)
+  - CYExtensions (0.1.0)
+  - CYLocalization (0.4.0)
 
 DEPENDENCIES:
   - CYExtensions
+  - CYLocalization
 
 SPEC CHECKSUMS:
-  CYExtensions: d8cd3e214bab011407bbce72fe38c388ff1cb87e
+  CYExtensions: 2c0e8c8c1f76bcb11f4e68ac3ef012bf43571210
+  CYLocalization: 4017c66db421f5047d22bce366d4a7feefc5d8e4
 
-PODFILE CHECKSUM: 8aa6183ab16aa2bdd6341a03699338be0ff5e51e
+PODFILE CHECKSUM: 77954b6facb4aeec5185ded9da37f31b28a4bc28
 
 COCOAPODS: 1.3.1
